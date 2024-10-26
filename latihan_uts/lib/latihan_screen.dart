@@ -62,7 +62,7 @@ class LatihanScreen extends StatelessWidget {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 Text(
                                   "Status",
                                   style: TextStyle(color: Colors.white),
