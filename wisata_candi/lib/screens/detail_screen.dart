@@ -36,6 +36,7 @@ class DetailScreen extends StatelessWidget {
                       color: Colors.deepPurple[100]?.withOpacity(0.8),
                       shape: BoxShape.circle,
                     ),
+                    // Back Button
                     child: IconButton(
                       onPressed: () {
                         Navigator.pop(context);

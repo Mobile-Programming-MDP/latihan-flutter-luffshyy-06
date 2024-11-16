@@ -25,17 +25,18 @@ class ItemCard extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
-        margin: const EdgeInsets.all(4),    // jarak tiap card
-        elevation: 1,                       // memberi bayangan pada card
+        margin: const EdgeInsets.all(4), // jarak tiap card
+        elevation: 1, // memberi bayangan pada card
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // TODO: 3. Buat Image sebagai anak dari Column
-            Expanded(         // agar tidak overflow
+            Expanded(
+              // agar tidak overflow
               // TODO: 7. Implementasi Hero animation
               child: Hero(
                 tag: 'candiImage-${candi.name}',
-                child: ClipRRect(         
+                child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
                   child: Image.asset(
                     candi.imageAsset,
