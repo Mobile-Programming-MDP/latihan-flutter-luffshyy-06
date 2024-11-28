@@ -17,9 +17,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Wisata Candi',
-      home: SignInScreen(),
+      theme: ThemeData(),
+      home: const MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/homescreen' : (context) => const HomeScreen(),
+        '/signin': (context) => const SignInScreen(),
+        '/signup': (context) => const SignUpScreen(),
+      },
+      // home: SignInScreen(),
       // home: MainScreen(),
       // home : HomeScreen(),
       // home: SearchScreen(),
